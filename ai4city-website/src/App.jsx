@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Twitter, Linkedin, Github, ChevronRight } from 'lucide-react';
 import { Navbar } from './components/Navbar';
+import './index.css'
+import { TEAM_DATA } from './data/team';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -40,10 +42,7 @@ export default function App() {
           <div className="pt-32 px-6 md:px-20 min-h-screen max-w-7xl mx-auto">
             <h1 className="text-5xl font-bold mb-10">People</h1>
             <div className="bg-blue-50 p-10 rounded-3xl border border-blue-100">
-               <p className="text-xl text-blue-800">团队成员数据模块（team.js）待迁入...</p>
-               <p className="mt-4 text-gray-600">
-                 提示：你可以直接将之前生成的 team.js 放入 src/data/ 文件夹，并在本组件内循环渲染。
-               </p>
+               <TeamPage />
             </div>
           </div>
         );
