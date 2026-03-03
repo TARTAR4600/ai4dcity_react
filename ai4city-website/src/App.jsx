@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Twitter, Linkedin, Github, ChevronRight } from 'lucide-react';
 import { Navbar } from './components/Navbar';
-import './index.css'
+import './index.css';
+import { TeamPage } from './components/TeamPage';
 import { TEAM_DATA } from './data/team';
 
 export default function App() {
